@@ -1,33 +1,7 @@
-Hi, I am _@huxpro_ (Huang, Xuan), an UI/Frontend engineer & designer, accidentally growing into a compiler hacker. My current interests range from programming languages theory and implementation in general (compiler, type system, type-based formal verification, virtual machine, runtime systems, garbage collection) to software engineering in the tech industry (client-side web/mobile app development, server-side backend, user interface and UX, developer infrastructure and DX). 
-
-I'm currently working on the [Hermes JavaScript Engine](https://hermesengine.dev/) at [Facebook](http://facebook.com/). I was also involved in some of the [Facebook Reality Labs](https://tech.fb.com/ar-vr/) and the [ReasonML](https://reasonml.github.io/) (now [ReScript](https://rescript-lang.org/)) efforts. I'm also passionated about [React](https://reactjs.org/) and [React Native](https://reactnative.dev/). 
-
-In the past, I worked on [Alitrip (Fliggy)](https://www.alitrip.com/) mobile and web apps under the [Alibaba Group](https://en.wikipedia.org/wiki/Alibaba_Group), found and lead front-end infrastructure team at an unicorn startup company [Beijing Weiying (a.k.a. WePiao, now acquired by Maoyan)](https://www.crunchbase.com/organization/beijing-weiying-technology), and helped [Ele.me (now acquired by Alibaba)](https://en.wikipedia.org/wiki/Ele.me) to upgrade their mobile web site into [the first influential PWA (progressive web app) in China](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509).
-
-I studied BA, Digital Media Art at [Communication University of China](https://en.wikipedia.org/wiki/Communication_University_of_China) and MS, Computer Science (with a focus on programming languages) at [Rochester Institute of Technology](https://en.wikipedia.org/wiki/Rochester_Institute_of_Technology).
-
-##### [My PL Spectrum (WIP 🚧)](https://huangxuan.me/2020/05/05/pl-chart/)
-
-I made a chart to visualize my experiences and interests on some of the programming languages. I know. I know this is always contraversial. But it's just something quite self-entertaining to do. So bare with me and have fun reading that!
-
-##### Appearence
-
-- [Upgrading to Progressive Web Apps][9] · [JSConf China Shanghai 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI Guangzhou 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux Beijing 2017
-- PWA Rehashing · Baidu HQ Beijing 2017
-- [Service Worker 101][5] · GDG DevFest Beijing 2016
-- [Progressive Web Apps][4] · QCon Shanghai 2016
-- Progressive Web App in my POV · GDG IO Redux Beijing 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript Modularization Journey][1] · 2015
-
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/
+# About who am I
+Hi, I’m @`r3kind1e`. I will tell a story about my reversal of the trajectory of my life. <br>
+In September 2017, I was admitted to a 211 English major. At that time, the daily routine was filled with useless garbage classes every day, doing too simple, boring, and mechanically repetitive exercises. I feel the pain of the meaningless passage of life all the time. As for the future, I don’t even dare to imagine, because most of our college graduates are employed in teaching and training industries that have no establishment. The year and a half passed really hard, but my family strongly opposed repetition. There is no way, I can only hold on. In fact, my mental state is on the verge of collapse. Someone tried to comfort me: "It's good for girls to be teachers." This requires a prerequisite. I don't hate being a teacher, and even have a certain love for being a teacher. Unfortunately, I don't meet this prerequisite. This also made me deeply aware that I am more suitable for creative work. <br>
+In February 2019, I resolutely switched to computer science. As the sophomore year started, I met a very enthusiastic and technically proficient classmate. He taught me the CTF competition and the different development directions of information security. That was the first time I heard the concepts of binary, web security, and cryptography. What impressed me was that when he talked about Pwn, his eyes were shining. I think he is so cool. We were not familiar at the time, and I asked him: "Why do you spend your time talking to me?". He said: "Technology is for sharing." At that moment, I made up my mind that my first job after graduation must be in the security industry. But first, I have to compress the undergraduate courses in computer science to one and a half years before I can leave school with peace of mind to find safety-related internships. I spend all my spare time to learn basic Linux commands, C, assembly, computer network, stack overflow under Win32 platform, and practice some simple CTF questions. However, these contents are too basic to support me in finding a safety-related internship. <br>
+In November 2020, I came into contact with web security for the first time. At this time, I have completed most of the courses of the undergraduate computer science and have taken a leave of absence. The reason for leaving school is: "I want to spend a year to explore the needs of the security market." <br>
+In April 2021, I, who didn't understand penetration at all, found my first security internship in a listed company that developed self-developed safety equipment. In terms of work, in three months, he traveled to three cities across the country. We have done BTRT and some daily leak scan and penetration projects, and have also won praise from some customers. The team has a strong technical atmosphere and simple interpersonal relationships. In terms of living, I rented it in the city center and I was very satisfied with it. On weekends, I go to my friend’s house to cook, swim, and visit scenic spots. However, the summer is hot, so it is more suitable to study with air conditioning at home. Realized economic independence, living closer and closer to the ideal appearance. <br>
+I hope my story can rekindle your hope in life. I wish my story can `rekindle` your hope for life. Give the sky full of stars for the dim people.
