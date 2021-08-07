@@ -102,3 +102,7 @@ mitm:
 
 攻击者漏洞扫描的流量会从代理池的某个出口IP到达目标站点。即使该出口IP被封禁，它也会很快地更换为新的出口IP。而攻击者通过浏览器与Web应用正常交互不会受到影响。
 
+## 总结
+1. 只配置http proxy，xray漏洞扫描流量和浏览器流量都会走http proxy。
+2. 只配置mitm upstream_proxy，漏洞扫描的流量直接到达目标站点，浏览器的流量走upstream_proxy。
+3. 同时配置http proxy与mitm upstream_proxy，漏洞扫描流量走http proxy，浏览器流量走upstream_proxy。
