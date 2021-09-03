@@ -1,3 +1,14 @@
+---
+layout: post
+title: "HTTP(s) Protocol Basics"
+date: "2021-08-26"
+author: "r3kind1e"
+header-img: "img/post-bg-Penetration Testing Student.png"
+catalog:    true
+tags: 
+    - Penetration Testing Student
+    - Penetration Testing Prerequisites
+---
 ## HTTP(s) Protocol Basics
 
 ```bash
