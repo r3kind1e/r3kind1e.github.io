@@ -30,7 +30,9 @@ Cookies只是网站安装到网络浏览器的“cookie jar”中的文本信息
 
 cookie jar 是 Web 浏览器存储 cookie 的存储空间。
 
-## Cookies Format
+
+
+## Cookies Format（Cookies格式）
 
 服务器可以通过响应消息中的 Set-Cookie HTTP 标头字段设置 cookie。
 
@@ -113,17 +115,17 @@ example.com 将 cookie 的内容设置为“a=mycookie”。
 
 该 cookie 对 subdomain.example.com 等子域也有效。 
 
-![image-20210905190510804](../img/in-post/ine/image-20210905190510804.png)
+![image-20210905190510804](/img/in-post/ine/image-20210905190510804.png)
 
 sub2.example.com 不是 cookie 域 sub.example.com 的有效子域
 
-![image-20210905190557540](../img/in-post/ine/image-20210905190557540.png)
+![image-20210905190557540](/img/in-post/ine/image-20210905190557540.png)
 
 
 
 如果 cookie 域字段为空，则客户端设置仅主机标志并将域设置为主机名。 cookie 将仅发送到该特定主机。
 
-![image-20210905190628624](../img/in-post/ine/image-20210905190628624.png)
+![image-20210905190628624](/img/in-post/ine/image-20210905190628624.png)
 
 ## Cookie Path（Cookie 路径）
 
@@ -193,11 +195,11 @@ Cookie 通常在登录期间安装。
 
 在这个例子中，浏览器发送一个带有用户名和密码的 POST 请求。
 
-![image-20210905190657675](../img/in-post/ine/image-20210905190657675.png)
+![image-20210905190657675](/img/in-post/ine/image-20210905190657675.png)
 
 服务器发送带有 Set-Cookie 标头字段的响应，从而告诉浏览器安装 cookie。 
 
-![image-20210905190720308](../img/in-post/ine/image-20210905190720308.png)
+![image-20210905190720308](/img/in-post/ine/image-20210905190720308.png)
 
 对于每个后续请求，浏览器会考虑：
 
@@ -209,11 +211,11 @@ Cookie 通常在登录期间安装。
 
 - 标志
 
-![image-20210905190740927](../img/in-post/ine/image-20210905190740927.png)
+![image-20210905190740927](/img/in-post/ine/image-20210905190740927.png)
 
 如果所有检查都通过，浏览器将在请求中插入一个 **cookie:** 头部。
 
-![image-20210905190802090](../img/in-post/ine/image-20210905190802090.png)
+![image-20210905190802090](/img/in-post/ine/image-20210905190802090.png)
 
 
 
