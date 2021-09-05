@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HTTP(s) Protocol Basics"
-date: "2021-08-26"
+date: "2021-09-02"
 author: "r3kind1e"
 header-img: "img/post-bg-Penetration Testing Student.png"
 catalog:    true
