@@ -6,8 +6,7 @@ author: "r3kind1e"
 header-img: "img/post-bg-Penetration Testing Student.png"
 catalog:    true
 tags: 
-    - Penetration Testing Student
-    - Penetration Testing Prerequisites
+    - 安全评估工具
 ---
 
 # How to use target scope in Burp Suite
