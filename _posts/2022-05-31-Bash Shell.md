@@ -293,6 +293,7 @@ Start COMMAND, and kill it if still running after DURATION.
 ```
 
 `vim alivecheck.sh`
+
 `chmod +x alivecheck.sh`
 
 ```bash
