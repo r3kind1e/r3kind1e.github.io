@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Bash Shell"
+title: "Bash Scripting"
 date: "2022-05-31"
 author: "r3kind1e"
 header-img: "img/post-bg-Penetration Testing Student.png"
 catalog:    true
 tags: 
     - Penetration Testing Student
-	- Bash Shell
+    - Bash Shell
 ---
 
 ## Bash Scripting Part 1
