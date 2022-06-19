@@ -16,10 +16,10 @@ tags:
 ## 实验室环境
 在这个实验室环境中，用户将获得对 Kali GUI 实例的访问权限。同一网络上有几台机器运行各种服务。
 
-**目的：**使用 Nmap 工具进行扫描和操作系统指纹识别，并回答以下问题：
+**目的：** 使用 Nmap 工具进行扫描和操作系统指纹识别，并回答以下问题：
 
 有多少台机器？
-1. pc1.ine.local机器上打开了哪些端口？
+* pc1.ine.local机器上打开了哪些端口？
 
 ```
 PORT     STATE SERVICE
@@ -28,7 +28,7 @@ PORT     STATE SERVICE
 3306/tcp open  mysql
 ```
 
-2. 机器pc1.ine.local机器上正在运行什么操作系统？
+* 机器pc1.ine.local机器上正在运行什么操作系统？
 
 ```
 Running: Linux 4.X|5.X
@@ -36,22 +36,22 @@ OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
 OS details: Linux 4.15 - 5.6
 ```
 
-3. pc2.ine.local机器上正在运行哪些服务？
+* pc2.ine.local机器上正在运行哪些服务？
 
 ```
 PORT      STATE SERVICE
 27017/tcp open  mongod
 ```
 
-4. 在其中一台机器上运行的 FTP 服务器的版本是什么？
+* 在其中一台机器上运行的 FTP 服务器的版本是什么？
 
 vsftpd 3.0.3
 
-5. 缓存服务器也在其中一台机器上运行。那台机器的域名是什么？
+* 缓存服务器也在其中一台机器上运行。那台机器的域名是什么？
 
 pc3.ine.local
 
-6. NoSQL 数据库和 SQL 数据库服务在不同的机器上运行。我们可以使用 Nmap 脚本从中提取一些信息吗？
+* NoSQL 数据库和 SQL 数据库服务在不同的机器上运行。我们可以使用 Nmap 脚本从中提取一些信息吗？
 感觉没有提取到特别有用的信息。
 
 ![pcinelocal](/img/in-post/ine/pcinelocal.png)
@@ -502,6 +502,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.42 seconds
 
 # Solution（解决方案）
 第 1 步：打开实验室链接以访问 Kali GUI 实例。
+
 步骤 2：检查提供的主机网络上的在线机器数。
 
 检查提供的主机的 IP 地址：
@@ -653,7 +654,7 @@ MAC Address: 02:42:C0:40:8C:03 (Unknown)
 Nmap done: 1 IP address (1 host up) scanned in 1.18 seconds
 ```
 
-**默认情况下，Nmap 只扫描前 1000 个端口，而不是扫描所有端口。**这使得基本扫描非常快，但正如您可以想象的那样，它也会错过在 1000 个端口以外的端口上运行的服务。
+**默认情况下，Nmap 只扫描前 1000 个端口，而不是扫描所有端口。** 这使得基本扫描非常快，但正如您可以想象的那样，它也会错过在 1000 个端口以外的端口上运行的服务。
 
 因此，要获取所有开放端口的列表，最好使用上述命令扫描所有端口。
 
@@ -864,13 +865,13 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 256 IP addresses (6 hosts up) scanned in 2.50 seconds
 ```
 
-这次我们将只获取端口 21 处于打开（或可能打开）状态的主机，而不是获取所有主机，即使端口处于 **closed, filtered,** 和 **closed|filtered** 状态也是如此。
+这次我们将只获取端口 21 处于打开（或可能打开）状态的主机，而不是获取所有主机，即使端口处于 `closed, filtered,`和 `closed|filtered` 状态也是如此。
 
 信息： -
 ```
 --open
 ```
-将仅显示**open、open|filtered**和**unfiltered**端口。- 当 Nmap 由于包过滤阻止其探测到达端口而无法确定端口是否打开时，输出将显示**filtered**状态。-**unfiltered**状态表示端口可访问，但 Nmap 无法确定该端口是打开还是关闭。
+将仅显示`open、open|filtered`和`unfiltered`端口。- 当 Nmap 由于包过滤阻止其探测到达端口而无法确定端口是否打开时，输出将显示`filtered`状态。-`unfiltered`状态表示端口可访问，但 Nmap 无法确定该端口是打开还是关闭。
 
 第 7 步：确定运行缓存服务的机器的域名。
 
@@ -938,7 +939,7 @@ Nmap done: 6 IP addresses (6 hosts up) scanned in 5.88 seconds
 
 请注意，target-3正在运行memcache服务（在它的默认端口 11211 上）。
 
-为了确定域名，我们可以检查提供的主机上的/etc/hosts文件：
+为了确定域名，我们可以检查提供的主机上的`/etc/hosts`文件：
 
 命令：
 
