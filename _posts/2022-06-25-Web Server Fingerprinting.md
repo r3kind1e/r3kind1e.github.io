@@ -152,7 +152,7 @@ httprint -P0 -h <target hosts> -s <signature file>
 ```
 httprint -P0 -h 1.2.3.4 -s /usr/share/httprint/signatures.txt
 ```
-![httprint](/img/in-post/ine/inehttprint.png)
+![httprint](/img/in-post/ine/httprint.png)
 
 ## References
 [OpenSSL SSL/TLS toolkit](https://www.openssl.org/)
