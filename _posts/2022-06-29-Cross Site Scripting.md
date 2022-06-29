@@ -65,7 +65,7 @@ XSS 涉及将恶意代码注入到网页的输出中。然后，访问用户的�
 在下面的幻灯片中，您将看到如何测试 XSS 以及如何使用它来执行 cookie 窃取。
 
 ## Finding an XSS（寻找 XSS）
-EXAMPLE
+**EXAMPLE**
 
 要找到 XSS，您必须查看每个用户输入，并测试它是否以某种方式显示在 Web 应用程序的输出中。
 
@@ -73,12 +73,12 @@ EXAMPLE
 
 请注意，搜索到的字符串通过 GET 参数传递给 Web 应用程序。
 
-![hack-me-xss.jpg](/img/in-post/ine/inehack-me-xss.jpg)
+![hack-me-xss.jpg](/img/in-post/ine/hack-me-xss.jpg)
 
 找到反射点后，你必须了解是否可以注入 HTML 代码，看看它是否以某种方式到达页面的输出； 这使您可以控制输出页面！
 您可以使用任何有效的 HTML 标记并尝试了解它是否到达页面。 查看输出页面的 HTML 源代码有助于了解如何构建 XSS 有效负载。
 
-EXAMPLE
+**EXAMPLE**
 
 有时只需注入一个无害的标签，如 `<i>`、`<pre>` 或 `<plaintext>`。
 
