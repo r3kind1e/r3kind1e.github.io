@@ -375,6 +375,7 @@ xsser的使用实例：
 ===========================================================================
 ```
 针对每个链接，使用不同的参数：
+
 |Page|Injection point|
 |---|---|
 |`http://demo.ine.local/index.php?page=add-to-your-blog.php`|Cross site scripting on blog entry, Cross site scripting on logged in user name|
