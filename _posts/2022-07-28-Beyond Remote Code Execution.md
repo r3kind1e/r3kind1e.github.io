@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Beyond Remote Code Execution"
-date: "2022-07-27"
+date: "2022-07-28"
 author: "r3kind1e"
 header-img: "img/post-bg-Penetration Testing Student.png"
 catalog:    true
