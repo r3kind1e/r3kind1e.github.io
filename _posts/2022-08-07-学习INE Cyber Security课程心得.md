@@ -10,10 +10,11 @@ tags:
 ---
 
 # 学习INE课程心得
-这篇文章将长期更新，以记录自己学习INE Cyber Security课程的学习体会。
+这篇文章将长期更新，以记录自己学习INE Cyber Security课程的心得体会。
 
 ## Penetration Testing Student
-发布日期：2022-08-07
+发布日期：`2022-08-07`
+
 最近免费体验了INE的Cyber Security课程。我学习的路径是Penetration Testing Student，这是针对信息安全新手的部分，内容虽然基础，但如果认真地去思考和解决问题，能够经历渗透测试能力从0到1的质变过程。
 
 该课程的不足之处有：
