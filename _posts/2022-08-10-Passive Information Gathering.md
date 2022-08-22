@@ -9,7 +9,6 @@ tags:
     - Penetration Testing Student v2
     - Assessment Methodologies
     - Information Gathering
-    - Passive Information Gathering
 ---
 
 # Introduction To Information Gathering

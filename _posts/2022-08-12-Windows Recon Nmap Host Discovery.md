@@ -9,7 +9,6 @@ tags:
     - Penetration Testing Student v2
     - Assessment Methodologies
     - Information Gathering
-    - Active Information Gathering
 ---
 
 # Windows Recon: Nmap Host Discovery（Windows 侦察：Nmap 主机发现）

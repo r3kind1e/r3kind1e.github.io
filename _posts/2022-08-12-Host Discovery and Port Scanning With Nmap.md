@@ -9,7 +9,6 @@ tags:
     - Penetration Testing Student v2
     - Assessment Methodologies
     - Information Gathering
-    - Active Information Gathering
 ---
 
 # Host Discovery With Nmap（使用 Nmap 发现主机）
