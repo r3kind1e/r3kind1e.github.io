@@ -128,7 +128,7 @@ Yes
 5701
 ```
 
-![WiFi-Security-Traffic-Analysis-1-5.png](/img/in-post/ine/WiFi-Security-Traffic-Analysis-1-5.png)
+![WiFi-Security-Traffic-Analysis-1-5.png](/img/in-post/ine/WiFi-Security-Traffic-Analysis-1-6.png)
 
 * What is the MAC address of the station which exchanged data packets with SSID 'SecurityTube_Open'?
 
