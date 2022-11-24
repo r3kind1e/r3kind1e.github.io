@@ -1,7 +1,18 @@
-# 关于我是谁
-Hi, I’m @`r3kind1e`。我将讲述一个关于我逆改人生轨迹的故事。<br>
-2017年9月，我被某211英语专业录取。那时候的日常就是每天被无用的垃圾课塞满，做着过于简单，枯燥乏味，机械重复的练习题。我无时不刻感受到生命无意义流逝的痛苦。至于前途，我更加不敢想象，因为我校大多数英专毕业生都入职了没有编制的教培行业。那一年半过得真的很煎熬，但是家里强烈反对复读。没办法，只能硬撑，事实上我的精神状态濒临崩溃。有人试图宽慰我：“女生当老师挺好的”，这得加上一个前提，不反感当老师，甚至对当老师有一定的热爱，不幸的是，我并不满足这个前提。这也让我深刻意识到了一点，我更适合从事创造性的工作。<br>
-2019年2月，我毅然转到计算机专业。大二下开学，我认识了一位很热心，技术实力很强的同学。他给我科普了CTF比赛，和信息安全的不同发展方向。那是我第一次听到二进制，Web安全，密码学这些概念。印象很深刻的是，他说起Pwn的时候，眼里都闪着光，我觉得他真是太酷了。我们当时并不熟，我问他：“为什么要花费自己的时间和我讲这些？”。他说：“技术是用来分享的”。那一刻，我下定决心，毕业后的第一份工作一定要从事安全行业。不过首先，我得把计算机专业本科的课程，压缩到一年半时间内学完，才能安心地离校找安全相关的实习。我用一切的课余时间，去学Linux基本命令，C，汇编，计算机网络，Win32平台下的栈溢出，练习一些简单的CTF题。不过，这些内容实在是太基础了，完全不够支持我找到一份安全相关的实习。<br>
-2020年11月，我首次接触Web安全。这个时候我已经学完了计算机本科绝大部分的课程，并办理了休学。休学的理由就是：“我想用一年的时间去探索安全市场的需求”。<br>
-2021年4月，完全不懂渗透的我，在一家自研安全设备的上市公司，找到人生第一份安服实习。在工作方面，三个月的时间，天南海北的跑了全国3个城市。做了BTRT和一些日常漏扫渗透项目，也获得了部分客户的好评。团队技术氛围浓厚，人际关系简单。在生活方面，我在市中心租到了很满意的自如。周末去朋友家做饭，游泳，逛景点。不过夏日炎炎，更适合在家里吹空调学习。实现了经济独立，活的越来越接近理想的模样了。<br>
-希望我的故事，能重新点燃你对生活的希望。I wish my story can `rekindle` your hope for life.为暗淡之人献上漫天星辰。
+# 这首诗献给 r3kind1e，由 bia 创作
+I am here to tell you how your glass body complements your mirror soul 
+
+How your skin, as delicate as the word love, sparkles under the slightest sun kiss
+
+I am here to tell you how the world needs more of your light and How you are equally loved and needed in the darkest of your hours 
+
+I am here to treasure you
+
+I am here to show you the treasure you already possess I am here to bask under your light When a million suns yearn for a sight of my body I am here to tell you how you are worth forfeiting universes for I am here to tell you, in all truth
+
+That you are enough
+
+That you are more than enough
+
+For anyone them or us 
+
+You will always be enough.

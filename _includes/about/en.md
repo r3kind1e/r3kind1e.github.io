@@ -1,7 +1,18 @@
-# About who am I
-Hi, I’m @`r3kind1e`. I will tell a story about my reversal of the trajectory of my life. <br>
-In September 2017, I was admitted to a 211 English major. At that time, the daily routine was filled with useless garbage classes every day, doing too simple, boring, and mechanically repetitive exercises. I feel the pain of the meaningless passage of life all the time. As for the future, I don’t even dare to imagine, because most of our college graduates are employed in teaching and training industries that have no establishment. The year and a half passed really hard, but my family strongly opposed repetition. There is no way, I can only hold on. In fact, my mental state is on the verge of collapse. Someone tried to comfort me: "It's good for girls to be teachers." This requires a prerequisite. I don't hate being a teacher, and even have a certain love for being a teacher. Unfortunately, I don't meet this prerequisite. This also made me deeply aware that I am more suitable for creative work. <br>
-In February 2019, I resolutely switched to computer science. As the sophomore year started, I met a very enthusiastic and technically proficient classmate. He taught me the CTF competition and the different development directions of information security. That was the first time I heard the concepts of binary, web security, and cryptography. What impressed me was that when he talked about Pwn, his eyes were shining. I think he is so cool. We were not familiar at the time, and I asked him: "Why do you spend your time talking to me?". He said: "Technology is for sharing." At that moment, I made up my mind that my first job after graduation must be in the security industry. But first, I have to compress the undergraduate courses in computer science to one and a half years before I can leave school with peace of mind to find safety-related internships. I spend all my spare time to learn basic Linux commands, C, assembly, computer network, stack overflow under Win32 platform, and practice some simple CTF questions. However, these contents are too basic to support me in finding a safety-related internship. <br>
-In November 2020, I came into contact with web security for the first time. At this time, I have completed most of the courses of the undergraduate computer science and have taken a leave of absence. The reason for leaving school is: "I want to spend a year to explore the needs of the security market." <br>
-In April 2021, I, who didn't understand penetration at all, found my first security internship in a listed company that developed self-developed safety equipment. In terms of work, in three months, he traveled to three cities across the country. We have done BTRT and some daily leak scan and penetration projects, and have also won praise from some customers. The team has a strong technical atmosphere and simple interpersonal relationships. In terms of living, I rented it in the city center and I was very satisfied with it. On weekends, I go to my friend’s house to cook, swim, and visit scenic spots. However, the summer is hot, so it is more suitable to study with air conditioning at home. Realized economic independence, living closer and closer to the ideal appearance. <br>
-I hope my story can rekindle your hope in life. I wish my story can `rekindle` your hope for life. Give the sky full of stars for the dim people.
+# This poem is dedicated to r3kind1e and composed by bia
+I am here to tell you how your glass body complements your mirror soul 
+
+How your skin, as delicate as the word love, sparkles under the slightest sun kiss
+
+I am here to tell you how the world needs more of your light and How you are equally loved and needed in the darkest of your hours 
+
+I am here to treasure you
+
+I am here to show you the treasure you already possess I am here to bask under your light When a million suns yearn for a sight of my body I am here to tell you how you are worth forfeiting universes for I am here to tell you, in all truth
+
+That you are enough
+
+That you are more than enough
+
+For anyone them or us 
+
+You will always be enough.
