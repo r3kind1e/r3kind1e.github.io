@@ -1,4 +1,7 @@
-# This poem is dedicated to r3kind1e and composed by bia
+# This poem is composed by bia and dedicated to r3kind1e
+
+`Monday, November 21, 2022`
+
 I am here to tell you how your glass body complements your mirror soul 
 
 How your skin, as delicate as the word love, sparkles under the slightest sun kiss

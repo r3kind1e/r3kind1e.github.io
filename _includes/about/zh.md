@@ -1,4 +1,7 @@
-# 这首诗献给 r3kind1e，由 bia 创作
+# 这首诗由 bia 创作，献给 r3kind1e。
+
+`2022年11月21日，星期一`
+
 I am here to tell you how your glass body complements your mirror soul 
 
 How your skin, as delicate as the word love, sparkles under the slightest sun kiss
