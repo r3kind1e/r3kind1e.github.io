@@ -42,6 +42,7 @@ The following diagram outlines the various phases involved in a typical penetrat
 下图概述了典型渗透测试中涉及的各个阶段。
 
 ## Penetration Testing With MSF
+
 |Penetration Testing Phase|Metasploit Framework Implementation|
 |---|---|
 |Information Gathering & Enumeration|Auxiliary Modules|
@@ -52,6 +53,7 @@ The following diagram outlines the various phases involved in a typical penetrat
 |Maintaining Persistent Access|Post Exploitation Modules Persistence Modules|
 
 ## 使用 MSF 进行渗透测试
+
 |渗透测试阶段|Metasploit 框架实施|
 |---|---|
 |信息收集和枚举|辅助模块|
