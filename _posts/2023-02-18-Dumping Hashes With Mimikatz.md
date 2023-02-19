@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows Privilege Escalation Token Impersonation With Incognito"
+title: "Dumping Hashes With Mimikatz"
 date: "2023-02-18"
 author: "r3kind1e"
 header-img: "img/post-bg-Penetration Testing Student.png"
