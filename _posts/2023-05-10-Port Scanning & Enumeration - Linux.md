@@ -163,45 +163,7 @@ PORT     STATE SERVICE     VERSION
 8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
 8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
 8787/tcp open  drb         Ruby DRb RMI (Ruby 1.8; path /usr/lib/ruby/1.8/drb)
-1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port1524-TCP:V=7.92%I=7%D=5/10%Time=645B881E%P=x86_64-pc-linux-gnu%r(NU
-SF:LL,2A,"\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20")%r(Gene
-SF:ricLines,D6,"\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20\n\
-SF:x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20\n\x1b\]0;@d1d6a9
-SF:361621:\x20/\x07root@d1d6a9361621:/#\x20\n\x1b\]0;@d1d6a9361621:\x20/\x
-SF:07root@d1d6a9361621:/#\x20\n\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a93                                                                                                                  
-SF:61621:/#\x20")%r(GetRequest,39,"\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d                                                                                                                  
-SF:6a9361621:/#\x20GET\x20/\x20HTTP/1\.0\n")%r(HTTPOptions,109,"\x1b\]0;@d                                                                                                                  
-SF:1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20OPTIONS\x20/\x20HTTP/1\.0\
-SF:nbash:\x20OPTIONS:\x20command\x20not\x20found\n\x1b\]0;@d1d6a9361621:\x
-SF:20/\x07root@d1d6a9361621:/#\x20\n\x1b\]0;@d1d6a9361621:\x20/\x07root@d1
-SF:d6a9361621:/#\x20\n\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\
-SF:x20\n\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20")%r(RTSPRe
-SF:quest,109,"\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20OPTIO
-SF:NS\x20/\x20RTSP/1\.0\nbash:\x20OPTIONS:\x20command\x20not\x20found\n\x1
-SF:b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20\n\x1b\]0;@d1d6a936
-SF:1621:\x20/\x07root@d1d6a9361621:/#\x20\n\x1b\]0;@d1d6a9361621:\x20/\x07
-SF:root@d1d6a9361621:/#\x20\n\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361
-SF:621:/#\x20")%r(RPCCheck,3F,"\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a93
-SF:61621:/#\x20\x07\(root\x20\x07\x08\x08\x08\x08\x08\x08\x07\x07\x1b\[1@\
-SF:|")%r(DNSVersionBindReqTCP,3B,"\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6
-SF:a9361621:/#\x20\x07\x07\x07version\x07bind\x07\x07")%r(DNSStatusRequest
-SF:TCP,47,"\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20\x1b\[H\
-SF:x1b\[2Jroot@d1d6a9361621:/#\x20\x07")%r(Help,A2,"\x1b\]0;@d1d6a9361621:
-SF:\x20/\x07root@d1d6a9361621:/#\x20HELP\nbash:\x20HELP:\x20command\x20not
-SF:\x20found\n\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20\n\x1
-SF:b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20")%r(SSLSessionReq,
-SF:193,"\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d6a9361621:/#\x20\^CS\x08\x0
-SF:8\x08\x1b\[1@O\x07\x1b\[1@\?\x1b\[1@G\x07\x07\x07\x1b\[1@,\x08\x08\x08\
-SF:x08:\x1b\[K\xea\xb2`~\xf3\x08\x08\x08\x08\x08\x08O\?G,\^CS\x07\x08\x08\
-SF:x08\x08\x08\x08\x08\x07\x07\x1b\[1@{\r\x1b\[12P\(arg:\x201\)\x20{\x08\x
-SF:08\x08\x089\)\x20{\r\x1b\[12@root@d1d6a9361621:/#\x20{O\?G,\^CS\x07\x07
-SF:w\x07\x07=\x07\x07\x07n\(\r\x1b\[7P\(i-search\)`':\x20{O\?G,\^CSw=n\(\r
-SF:\x1b\[8@root@d1d6a9361621:/#\x20{O\?G,\^CSw=\^@\(\nbash:\x20{O\?G,\x03S
-SF:w=:\x20command\x20not\x20found\n\x1b\]0;@d1d6a9361621:\x20/\x07root@d1d
-SF:6a9361621:/#\x20f\x07edcba`\x08\x08\x08\x08\x08\x08\x08\x1b\[K\r\(rever
-SF:se-i-search\)`':\x20\r\x1b\[1Proot@d1d6a9361621:/#\x20\x07\x07\x07\x07\
-SF:x07");
+
 Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
