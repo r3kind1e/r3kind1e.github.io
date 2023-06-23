@@ -313,21 +313,3 @@ root@victim-1:/tmp# cat test.txt
 cat test.txt
 this is some test text
 ```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
-
-```
-```
