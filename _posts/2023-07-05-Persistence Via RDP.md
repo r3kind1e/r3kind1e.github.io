@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Persistence Service"
+title: "Persistence Via RDP"
 date: "2023-07-05"
 author: "r3kind1e"
 header-img: "img/post-bg-Penetration Testing Student.png"
