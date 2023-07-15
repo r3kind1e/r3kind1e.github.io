@@ -25,7 +25,7 @@ tags:
 我不知道最终能否在中东找到适合的工作，也不知道自己是否有足够的能力在那里生活。但我能做的就是抓住每一个当下的机会，将每件值得的事情做到极致。我常常想象，什么时候我才能穿上Abaya，戴上hijab，自由地走进清真寺礼拜，在洁白如雪的沙滩上奔跑呢？
 
 ## chatGPT将上述日记重写为英语
-Today is a special day because I finally went to the mosque for prayer. It was a dream come true for me. I experienced the feeling of summer as I completed the Friday congregational prayer at the Imperial Mosque. The sun was shining brightly, casting its warm glow on the bookshelves where I sought solace. I flipped through the pages of the Quran, finding tranquility in the process.
+Today is a special day because I finally went to the mosque for prayer. It was a dream come true for me. I experienced the feeling of summer as I completed the Friday congregational prayer at the Imperial Mosque. The sun was shining brightly, casting its warm glow on the bookshelves where I sought solace. I flipped through the pages of the Quran, finding tranquility in the process. In that moment, I felt the eternal connection of my knees, hands, and forehead touching the prayer mat, merging with the earth.
 
 Despite being introverted and timid, I have always worried about making mistakes during prayer and felt concerned about not belonging to the mainstream ethnicity of Islam. Due to these mental pressures and various external constraints, I hadn't set foot inside a mosque for eight long years. I used to believe that I would wait for an opportunity to work or study in the Middle East, in a more inclusive environment, before realizing my dream of becoming a Muslim. But now, I have made up my mind to stop waiting. I went to the mosque for Friday prayer.
 
