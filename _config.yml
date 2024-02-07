@@ -1,10 +1,10 @@
 # Site settings
-title: r3kind1e's infosec blog
-SEOTitle: r3kind1e的信息安全博客 | r3kind1e's infosec blog
+title: r3kind1e - Cybersecurity Insights and Penetration Testing
+SEOTitle: r3kind1e | Penetration Testing Engineer | Cybersecurity Blog | 网络安全博客
 header-img: img/home-bg.png
 email: r3kind1e@yahoo.com
-description: "艺无止境，诚惶诚恐 | r3kind1e, Web applications& Mobile applications, Systems attacks, Malware analysis, Reverse engineering | 这里是r3kind1e的信息安全博客，"
-keyword: "r3kind1e, r3kind1e的博客, r3kind1e Blog, 博客, 个人网站, Web安全, 渗透测试, 网络安全, 信息安全, infosec, Cyber Security"
+description: "Join r3kind1e, a rising Penetration Testing Engineer, as she shares her journey and insights into the world of cybersecurity. Dive into detailed blog posts covering topics from ethical hacking to web application security."
+keyword: "r3kind1e, Cybersecurity, Penetration Testing, Ethical Hacking, Web Application Security, Log4Shell, Cybersecurity Blog, Security Vulnerabilities, Network Security."
 url: "https://r3kind1e.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -78,7 +78,7 @@ ga_domain: r3kind1e.github.io
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "r3kind1e,  2017年9月，就读于英语专业。2019年2月，转到计算机专业。2020年11月，首次接触Web安全。2021年4月，找到人生第一份安服实习。我很喜欢《送你一朵小红花》中的一句歌词：“多么苦难的日子里，你都已战胜了它”。<br> 我的安全领域的引路人说过两句话：“技术是用来分享的”，“刻苦训练，守护国家信息安全”。从技术和全局思维角度来看，第二点我暂时达不到。现在，我正在践行第一点。"
+sidebar-about-description: "Initially studied English before switching to Computer Science. Completed most Computer Science credits within a year and a half. Took a year off for self-study in cybersecurity and interned as a Penetration Testing Engineer at Hillstone Networks."
 sidebar-avatar: /img/touxiang.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
