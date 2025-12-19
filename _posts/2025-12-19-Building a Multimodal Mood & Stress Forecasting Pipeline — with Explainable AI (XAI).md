@@ -55,11 +55,11 @@ For explainability:
 * **Integrated Gradients (Captum)** for deep sequence models
   Artifacts are exported under `artifacts/explanations` (including per-participant summaries). 
 
-![6h TCN stress ig heatmap](img/in-post/machinelearning/stress_ig_heatmap.png)
+![6h TCN stress ig heatmap](/img/in-post/machinelearning/stress_ig_heatmap.png)
 
-![6h TCN stress ig time importance](img/in-post/machinelearning/stress_ig_time_importance.png)
+![6h TCN stress ig time importance](/img/in-post/machinelearning/stress_ig_time_importance.png)
 
-![6h TCN stress ig top features](img/in-post/machinelearning/stress_ig_top_features.png)
+![6h TCN stress ig top features](/img/in-post/machinelearning/stress_ig_top_features.png)
 
 ---
 
@@ -73,7 +73,7 @@ A quick summary across horizons (see full tables in `artifacts/REPORT.md` and `t
 
 **Caveat:** the test folds can be very small (≤25 windows), so variance is expected — I explicitly note this in the repo to avoid over-claiming performance. 
 
-![model comparison with baseline](img/in-post/machinelearning/model_comparison_with_baseline.png)
+![model comparison with baseline](/img/in-post/machinelearning/model_comparison_with_baseline.png)
 
 ---
 
