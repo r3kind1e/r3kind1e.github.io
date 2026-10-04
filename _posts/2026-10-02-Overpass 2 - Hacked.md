@@ -39,14 +39,7 @@ Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: text/html
 
-..........uTMo.0...W0:.s.v.Vv....aH..........!.I.a.}.l.I....P...#.>.\>.~.<A..]..p..B.3..C.1.......
-..O2.4.m.....d.;KG~..z@I.[-...b....pR.>.f.....b..3.
-....".}..........
-\]:ln...+..q......p...8..K6_#...o.`..C^y..A..A*.h...7..Oy#.YDL.....|..iu?.C...v.~.....8....._[.'7#vC..j.Pi.}...Z..U......k.e.w[.B..-G.$....."P..kVr1qf...sQ.......k...
-...xM.3..{....z..#..c5<.xd.+}...`M ..AE74a"M.r...=..u
-r......%...T..!R~.v.e..SNA....S......c.9..?....F.L.../.f.....T.k$..m.%......z.....m..f.IDh...G@..;...6......0..=..z.9..M.i,.]...*(k
-...qA..............1n:.T+\..g&E..H..6M.E.3l...J.V.5%b.p...'$#."..xjH..Q^D.<O.J.LK.....;...#.<K.J..8.....3.n.(Rd'tG?.
-.c.1..8...^..N....7..7.s............
+...
 ```
 
 tcp.stream eq 1
@@ -105,9 +98,7 @@ Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Content-Type: text/html;charset=UTF-8
 
-............_o.0....)..0m..I....'F..D!*T.4...
-....1l...!LM'X.......s.K.$...k:....	...&.!..._.C..E...{!.J.J.GSD.Ha.%=.R........t...	z	...(u....MUj.k.[...C..4.5r.k.......B.4......+.#.+D.\..6y.....qV2......+m.........h.)aP.....a<...	.S.......c..NXma..\J.O....._....ID..YY..3.].n.\.u.\....0].E.k.`..f....t......F.....@4e.- .F.V...g[.Veuu.{...F.
-.(@....a}.......]g.....y4^U8...k......=............D._...]..+&.s#...*.......F..!.(.y.sa.....D..\^{........X..]..........d>.E.......
+...
 ```
 
 tcp.stream eq 2
@@ -356,10 +347,7 @@ Content-type: image/png
 Content-Length: 60102
 Last-Modified: Tue, 21 Jul 2020 19:33:27 GMT
 
-.PNG
-.
 ...
-IHDR....................yiCCPICC Profile..(....K.@....jE+.. ....`.EA:J..T...U....B..K..W.... ..5...*.*..".8....H..5....;.......=..3:3...`....S.RaY
 ```
 
 tcp.stream eq 8
@@ -501,11 +489,7 @@ Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Content-Type: image/png
 
-.PNG
-.
-...
-IHDR....................yiCCPICC Profile..(....K.@....jE+.. ....`.EA:J..T...U....B..K..W.... ..5...*.*..".8....H..5....;.......=..3:3...`....S.RaY
-{2.G....c9.?.....q....].d.P.."....N....".^{{.)9r...c.a..;*}.....W.?~...'.N.....IEND.B`.
+PNG
 ```
 
 ## Task 2 Research - Analyse the code
